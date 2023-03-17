@@ -48,7 +48,7 @@
                 string instruction = "";
                 if (CompareBits(buffer[0], OPCODE_MOV, OPCODE_MASK, 6))
                 {
-                    instruction += "MOV ";
+                    instruction += "mov ";
 
                     var wBit = GetBit(buffer[0], 0) ? 1 : 0;
                     var dBit = GetBit(buffer[0], 1);
